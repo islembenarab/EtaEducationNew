@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&display=swap');
+body {
+    background: url(/img/bg_authen.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #464646;
+    font-family: poppins;
+}
+header {
+	display:flex;
+	flex-direction:row;
+    text-align: center;
+    justify-content:center;
+	background: rgb(255, 255, 255) transparent ;    
+}
+
+header a {
+	background: rgb(255, 255, 255) transparent ;
+    margin: 0 10px 0 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+header a img {
+	width:150px;
+	height:50px;
+   
+}
+header a img:hover {
+	border-radius:12px;
+	background:white;
+	
+}
+
+
+header a:hover {
+    transition: 1s;
+    color: darkblue;
+    
+}
+
+
+div {
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    width: 40%;
+    height: max-content;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 25px grey, -5px -5px 100px grey;
+}
+
+div form {
+    width: auto;
+    margin: 15% 15% 0 15%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+input:focus,
+select:focus {
+    
+    transition: 0.5s;
+    outline: 0px solid transparent;
+}
+
+div form input,
+select {
+    margin: 3% 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width:auto;
+    font-size: 20px;
+    height: 30px;
+    background: transparent;
+    text-align: center;
+    color: black;
+    font-family: poppins;
+}
+
+input::placeholder {
+    color: black;
+    font-family: poppins;
+}
+
+.container {
+    position: relative;
+    padding-left: 35px;
+    margin: 10px 0 12px 0;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    background-color: #eee;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+div form button, #a {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+    margin:0 auto 5% auto;
+   	padding:10px 20px;
+    background: -webkit-linear-gradient(rgb(3, 80, 124), darkblue);
+    padding: 3px 45px;
+    font-family: poppins;
+    font-size: 20px;
+    width:auto;
+}
+
+button:hover,#a:hover {
+    color: black;
+    background: white;  
+}
+
+pre {
+    margin: 150px 50px 100px 600px;
+    font-size: 5em;
+    font-family: Dancing Script;
+    transform: rotate(-10deg);
+}
+
+#psign_up {
+    margin: 150px 50px 150px 450px;
+    font-size: 4em;
+    font-family: Dancing Script;
+    transform: rotate(-10deg);
+}
+
+#boxsign_up {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 40%;
+    height: max-content;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 25px grey, -5px -5px 100px grey;
+}
+#boxsign_up form input,
+select {
+    margin: 1.5% 0;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    width:100%;
+    font-size: 20px;
+    height: 30px;
+    background: transparent;
+    text-align: center;
+    color: black;
+    font-family: poppins;
+}
+
+#formsign_up:first-child {
+    margin-top: 0;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+@media screen and (max-width: 900px) {
+    body{
+        background: url(/img/home_bg_mobile.png);
+    }
+    #psign_up{display: none}
+    #boxsign_up{
+        width: 80%;
+        background: rgba(254, 254, 254, 0.45);
+    }
+    .singINPRE{
+        display: none;
+    }
+    #boxsing{
+        width: 80%;
+        background: rgba(254, 254, 254, 0.45);
+    }
+}
