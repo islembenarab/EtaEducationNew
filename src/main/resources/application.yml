@@ -12,9 +12,9 @@ spring:
       prefix: /WEB-INF/views/
       suffix: .jsp
   datasource:
-    password: islem
-    url: jdbc:mysql://localhost:3306/formation1
-    username: root
+    password: Pvpi0fDgyXONhf7PWxIYeeIbdtQFgYZy
+    url: jdbc:postgresql://dpg-cgks08seoogkndl25pp0-a.oregon-postgres.render.com:5432/formatec
+    username: formatec_user
   jpa:
     hibernate:
       ddl-auto: update
@@ -31,7 +31,3 @@ paypal:
   client:
     id: AarJUYm7vexJFMMQmKyrWgHoKL29ZV8jWeguHi_E0cwH8bZeQlI5heKZnFgs2-ViwM-jijICjB3bipHg
     secret: EPHp_EJlvFD1Ug4AcfQtgOd-bXRh_uPJJeGz2OtRN5QixDzWLeZOP-4YaNHlP3l9iYyJEsDBJnmFUUNZ
-    
-    
-    
-    

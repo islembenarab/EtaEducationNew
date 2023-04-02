@@ -24,15 +24,15 @@ import formatec.DAO.Inscriptions;
 public class paymentService {
 	@Autowired
 	private APIContext apiContext;
-	
-	
+
+
 	public Payment createPayment(
-			Double price, 
-			String currency, 
+			Double price,
+			String currency,
 			String method,
 			String intent,
-			String description, 
-			String cancelUrl, 
+			String description,
+			String cancelUrl,
 			String successUrl) throws PayPalRESTException{
 		Amount amount = new Amount();
 		amount.setCurrency(currency);
@@ -51,7 +51,7 @@ public class paymentService {
 
 		Payment payment = new Payment();
 		payment.setIntent(intent.toString());
-		payment.setPayer(payer);  
+		payment.setPayer(payer);
 		payment.setTransactions(transactions);
 		RedirectUrls redirectUrls = new RedirectUrls();
 		redirectUrls.setCancelUrl(cancelUrl);
@@ -60,7 +60,7 @@ public class paymentService {
 
 		return payment.create(apiContext);
 	}
-	
+
 	public Payment executePayment(String paymentId, String payerId) throws PayPalRESTException{
 		Payment payment = new Payment();
 		payment.setId(paymentId);

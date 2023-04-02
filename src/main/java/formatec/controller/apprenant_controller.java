@@ -129,9 +129,9 @@ public class apprenant_controller {
 					return "redirect:"+link.getHref();
 				}
 			}
-			
+
 		} catch (PayPalRESTException e) {
-		
+
 			e.printStackTrace();
 		}
 		return "redirect:/";
