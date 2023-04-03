@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import formatec.repository.SseService;
 import formatec.service.*;
-@RestController
+@Controller
 public class etablissement_controller {
 	@Autowired
 	etablissementService etablissementS;

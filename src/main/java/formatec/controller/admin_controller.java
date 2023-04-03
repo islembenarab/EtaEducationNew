@@ -17,7 +17,7 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import formatec.DAO.*;
 import formatec.service.*;
-@RestController
+@Controller
 public class admin_controller {
 	@Autowired
 	adminService adminS;

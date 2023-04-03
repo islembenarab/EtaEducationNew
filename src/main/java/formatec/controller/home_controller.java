@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 
 import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +24,7 @@ import formatec.service.etablissementService;
 import formatec.service.formateurService;
 import formatec.service.formationService;
 
-@RestController
+@Controller
 public class home_controller {
 	@Autowired
 	apprenantService apprenantS;
@@ -91,7 +92,7 @@ public class home_controller {
 			model.addAttribute("button_signup2", "Go to your profile");
 		}
 		System.out.println("end of");
-		return "this is khsodiglksjbrgubsilurgfblkakjb";
+		return "home";
 	}
 
 	@GetMapping(value = "/logout")

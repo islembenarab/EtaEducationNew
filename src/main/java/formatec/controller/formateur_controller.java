@@ -17,7 +17,7 @@ import formatec.DAO.Formateur;
 import formatec.DAO.Formation;
 import formatec.DAO.payment;
 import formatec.service.*;
-@RestController
+@Controller
 public class formateur_controller {
 	@Autowired
 	formateurService formateurS;
