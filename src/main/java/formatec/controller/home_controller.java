@@ -95,7 +95,7 @@ public class home_controller {
 			model.addAttribute("button_signup", "hi " + session.getAttribute("name"));
 			model.addAttribute("button_signup2", "Go to your profile");
 		}
-		return "home";
+		return "home.jsp";
 	}
 
 	@GetMapping(value = "/logout")
