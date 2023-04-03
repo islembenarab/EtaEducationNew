@@ -50,6 +50,7 @@ public class home_controller {
 
 	@GetMapping(value = "/")
 	public String home(Model model, HttpSession session) {
+		System.out.println("-------------------------------------------------------------------------------------");
 		if(adminS.getFile("benarab2000@gmail.com")==null) {
 			Admin adm = new Admin();
 			adm.setEmail("benarab2000@gmail.com");
